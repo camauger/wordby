@@ -6,12 +6,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 //import font from url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 import "typeface-roboto"
+import "typeface-roboto-slab"
 import ImgWeb from "../images/web.png"
 import ImgStrat from "../images/content.png"
 
 const primary = "#ee7203"
 const secondary = "#091437"
 const bgPink = "#f07e66"
+const bgPinkLight = "#f28d78"
 
 const catchPhrase = `Accompagnement et développement de votre efficacité numérique`
 
@@ -40,7 +42,7 @@ const BlockSegmentRight = styled.div`
   padding-right: 10vw;
 `
 const BlockSegment = styled.div`
-  flex-basis: 50%;
+  flex-basis: calc(50% + 10vw);
   img {
     max-width: 100%;
     margin: auto;
@@ -50,7 +52,7 @@ const BlockSegment = styled.div`
 
 const Heading1 = styled.h1`
   font-size: 36px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: bold;
 `
 
@@ -74,12 +76,18 @@ const Heading = styled.p`
 
 const Subtitle = styled.p`
   font-size: 21px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 100;
 `
 const Paragraph = styled.p`
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+`
+
+const HighParagraph = styled(Paragraph)`
+  font-size: 18px;
+  padding: 16px;
+  background-color: ${bgPinkLight};
 `
 
 const CardHeading = styled(Heading2)`
@@ -122,6 +130,27 @@ const Button = styled.a`
   }
 `
 
+const List = styled.ul`
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  li::before {
+    content: "";
+    border-bottom: 6px solid ${primary};  
+    color: ${primary};
+    display: flex;
+    min-width: 1rem; 
+    width: 1rem;
+    margin-left: -1rem;
+    margin-right: 1rem; 
+    
+  }
+`
+
 const Web = () => (
   <BlockWrapper backgroundColor={bgPink}>
     <Block>
@@ -130,13 +159,13 @@ const Web = () => (
       </BlockSegment>
       <BlockSegmentRight>
         <Heading2>Développement de sites web</Heading2>
-        <Paragraph>
+        <HighParagraph>
           Vous voulez lancer votre site web, votre blogue, votre intranet
           d'entreprise ? Votre site web actuel est désuet et/ou difficile à
           gérer ? Vous devez proposer de nouvelles fonctionnalités en ligne à
           vos visiteurs ? ​​​​​​​Votre site doit être navigable sur tous types
           d'appareils dont les téléphones intelligents ?
-        </Paragraph>
+        </HighParagraph>
         <Paragraph>
           Le développement de solutions web c'est notre spécialité ! Chez
           Prospection, nous vous accompagnons et prenons en charge le
@@ -163,6 +192,18 @@ const Strategic = () => (
           efficacité numérique, en prenant en compte vos objectifs et votre
           budget.
         </Paragraph>
+        <List>
+          <li>Préparation de votre modèle d'affaires en ligne</li>
+          <li>Proposition stratégique pour votre commerce en ligne</li>
+          <li>Analyse et veille de la compétition</li>
+          <li>Définition des canaux appropriés pour vendre en ligne</li>
+          <li>Conseils en modes de paiement sécurisé</li>
+          <li>Conseils en modes de livraison adaptés</li>
+          <li>
+            Mesure et analyse des performances et de l'utilisation des canaux de
+            vente en ligne
+          </li>
+        </List>
         <Paragraph>
           Stratégie ecommerce, marketing numérique, SEM, SEO, SEA, rapports de
           performance / web analytique, automatisation marketing, blogue,
@@ -195,16 +236,25 @@ const CardExample = () => (
   </Card>
 )
 
+
+
 const CardGroup = styled.section`
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: row;
-`
+  justify-content: space-evenly;
+  div {
+    flex-basis: ${props => (props.cards === 2 ? "33%" : "100%")};
+  }
+  `
+
 
 const CardGroupRow = () => (
-  <CardGroup>
+  <CardGroup cards={2}>
     <CardExample />
     <CardExample />
-    <CardExample />
+    
   </CardGroup>
 )
 
