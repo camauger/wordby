@@ -129,24 +129,28 @@ const WebPage = () => (
       </div>
     </Section>
     <Section className={"bg-salmon"}>
-    <div>
-        <img src={ImgDevWeb2} alt="Screen" />
-      </div><div>
-      <div>
-        <h2>Programmation, intégration et&nbsp;sécurité</h2>
+                <div>
+                <img src={ImgDevWeb2} alt="Screen" />
+                </div>
+        
+      
         <div>
-        <p>
-          Dans quel langage programmer votre site web ? Doit-il communiquer avec
-          d’autres applications ? Comment y intégrer et traiter des données
-          externes ? Avez-vous des informations sensibles qui nécessitent d’être
-          encodées ?
-        </p>
-        <p>
-          Dans chaque cas, ce sont les besoins qui déterminent le type de
-          programmation. Les technologies offrent toute la flexibilité pour
-          s’adapter. À votre projet. À vos besoins.
-        </p>
-        <h3>Nos programmeurs parlent une multitude de langages !</h3>
+        <h2>Programmation, intégration et&nbsp;sécurité</h2>
+
+<p>
+  Dans quel langage programmer votre site web ? Doit-il communiquer avec
+  d’autres applications ? Comment y intégrer et traiter des données
+  externes ? Avez-vous des informations sensibles qui nécessitent d’être
+  encodées ?
+</p>
+<p>
+  Dans chaque cas, ce sont les besoins qui déterminent le type de
+  programmation. Les technologies offrent toute la flexibilité pour
+  s’adapter. À votre projet. À vos besoins.
+</p>
+        </div>
+       <div>
+       <h3>Nos programmeurs parlent une multitude de langages !</h3>
         <p>
           Tous les jours notre équipe de production code dans une multitude de
           langages de programmation web pour traiter et échanger de
@@ -165,6 +169,8 @@ const WebPage = () => (
           être ajoutées tel qu’un module sécurisé de paiement en ligne connecté
           à PayPal ou Stripe, etc….
         </p>
+       </div>
+        <div>
         <h3>La sécurité au centre de nos considérations</h3>
         <p>
           Avec un soucis permanent pour la sécurité de vos données et des autres
@@ -175,7 +181,7 @@ const WebPage = () => (
           spammers et des logiciels malveillants.
         </p>
         </div>
-      </div></div>
+
     </Section>
   </Layout>
 )
