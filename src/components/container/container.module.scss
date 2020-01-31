@@ -65,44 +65,75 @@ $prog-padding-values: (1, 2, 3);
   }
 }
 
-$containerMargin: 15px;
+$containerMargin: 30px;
 
 .container {
-   @extend .prog-padding-tb-1;
-    padding-left: $containerMargin;
-    padding-right: $containerMargin;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  
+  padding-left: $containerMargin;
+  padding-right: $containerMargin;
+  @extend .prog-padding-tb-2;
   div {
-    //border: 1px solid white;
-    padding: 1rem;
+    // Small devices (landscape phones, 576px and up)
+    display: flex;
+    flex-direction: column;
+
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
+      align-self: center;
     }
-  }
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
-  }
-  // Medium devices (tablets, 768px and up)
-  @media (min-width: 768px) {
-    
-  }
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    div:nth-of-type(2) {
-        align-self: flex-end;
+    div {
+      max-width: 680px;
+      margin: auto;
+      flex-direction: column;
     }
-  }
-  // Extra large devices (large desktops, 1200px and up)
-  @media (min-width: 1200px) {
+    @media (min-width: 576px) {
+    }
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+    }
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+    }
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
+
+// .container {
+//    @extend .prog-padding-tb-1;
+//     padding-left: $containerMargin;
+//     padding-right: $containerMargin;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: auto;
+
+//   div {
+//     //border: 1px solid white;
+//     padding: 1rem;
+//     img {
+
+//     }
+//   }
+//   // Small devices (landscape phones, 576px and up)
+//   @media (min-width: 576px) {
+//   }
+//   // Medium devices (tablets, 768px and up)
+//   @media (min-width: 768px) {
+
+//   }
+//   // Large devices (desktops, 992px and up)
+//   @media (min-width: 992px) {
+//     grid-template-columns: 784px auto;
+//     column-gap: 40px;
+//     div:nth-of-type(2) {
+//         align-self: flex-end;
+//     }
+//   }
+//   // Extra large devices (large desktops, 1200px and up)
+//   @media (min-width: 1200px) {
+//   }
+// }
 
 // .container {
 //     @extend .prog-padding-all-2;

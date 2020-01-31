@@ -129,59 +129,55 @@ const WebPage = () => (
       </div>
     </Section>
     <Section className={"bg-salmon"}>
-                <div>
-                <img src={ImgDevWeb2} alt="Screen" />
-                </div>
-        
-      
-        <div>
-        <h2>Programmation, intégration et&nbsp;sécurité</h2>
+      <div>
+        <img src={ImgDevWeb2} alt="Screen" />
 
-<p>
-  Dans quel langage programmer votre site web ? Doit-il communiquer avec
-  d’autres applications ? Comment y intégrer et traiter des données
-  externes ? Avez-vous des informations sensibles qui nécessitent d’être
-  encodées ?
-</p>
-<p>
-  Dans chaque cas, ce sont les besoins qui déterminent le type de
-  programmation. Les technologies offrent toute la flexibilité pour
-  s’adapter. À votre projet. À vos besoins.
-</p>
-        </div>
-       <div>
-       <h3>Nos programmeurs parlent une multitude de langages !</h3>
-        <p>
-          Tous les jours notre équipe de production code dans une multitude de
-          langages de programmation web pour traiter et échanger de
-          l’information avec l’utilisateur et le serveur. Que votre site web,
-          votre application mobile ou votre base de données, nécessite le
-          langage C#, PHP, XML, HTML5, Javascript, SQL, MySQL ou CSS3, nous le
-          parlons couramment.
-        </p>
-        <p>
-          L’équipe de Prospection est constituée d’experts qui maîtrisent
-          différents CMS (Système de gestion de contenu) qui permettent de
-          développer rapidement des solutions professionnelles de qualité.
-          Ainsi, votre site web ou votre site intranet pourrait être développé
-          sur WordPress, votre boutique e-commerce sur WooCommerce, Magento ou
-          Nop Commerce. De multiples fonctionnalités pourraient facilement y
-          être ajoutées tel qu’un module sécurisé de paiement en ligne connecté
-          à PayPal ou Stripe, etc….
-        </p>
-       </div>
         <div>
-        <h3>La sécurité au centre de nos considérations</h3>
-        <p>
-          Avec un soucis permanent pour la sécurité de vos données et des autres
-          informations critiques qui pourraient circuler entre votre site web,
-          votre base de données et des applications externes, nous nous assurons
-          de bien les protéger. Nos spécialistes veillent à protéger votre site
-          web, votre serveur et vos bases de données des pirates informatiques,
-          spammers et des logiciels malveillants.
-        </p>
-        </div>
+          <h2>Programmation, intégration et&nbsp;sécurité</h2>
 
+          <p>
+            Dans quel langage programmer votre site web ? Doit-il communiquer
+            avec d’autres applications ? Comment y intégrer et traiter des
+            données externes ? Avez-vous des informations sensibles qui
+            nécessitent d’être encodées ?
+          </p>
+          <p>
+            Dans chaque cas, ce sont les besoins qui déterminent le type de
+            programmation. Les technologies offrent toute la flexibilité pour
+            s’adapter. À votre projet. À vos besoins.
+          </p>
+
+          <h3>Nos programmeurs parlent une multitude de langages !</h3>
+          <p>
+            Tous les jours notre équipe de production code dans une multitude de
+            langages de programmation web pour traiter et échanger de
+            l’information avec l’utilisateur et le serveur. Que votre site web,
+            votre application mobile ou votre base de données, nécessite le
+            langage C#, PHP, XML, HTML5, Javascript, SQL, MySQL ou CSS3, nous le
+            parlons couramment.
+          </p>
+          <p>
+            L’équipe de Prospection est constituée d’experts qui maîtrisent
+            différents CMS (Système de gestion de contenu) qui permettent de
+            développer rapidement des solutions professionnelles de qualité.
+            Ainsi, votre site web ou votre site intranet pourrait être développé
+            sur WordPress, votre boutique e-commerce sur WooCommerce, Magento ou
+            Nop Commerce. De multiples fonctionnalités pourraient facilement y
+            être ajoutées tel qu’un module sécurisé de paiement en ligne
+            connecté à PayPal ou Stripe, etc….
+          </p>
+
+          <h3>La sécurité au centre de nos considérations</h3>
+          <p>
+            Avec un soucis permanent pour la sécurité de vos données et des
+            autres informations critiques qui pourraient circuler entre votre
+            site web, votre base de données et des applications externes, nous
+            nous assurons de bien les protéger. Nos spécialistes veillent à
+            protéger votre site web, votre serveur et vos bases de données des
+            pirates informatiques, spammers et des logiciels malveillants.
+          </p>
+        </div>
+      </div>
     </Section>
   </Layout>
 )
