@@ -72,6 +72,8 @@ $containerMargin: 30px;
   padding-right: $containerMargin;
   @extend .prog-padding-tb-2;
   div {
+      margin: auto;
+      max-width: 1440px;
     // Small devices (landscape phones, 576px and up)
     display: flex;
     flex-direction: column;
