@@ -1,0 +1,107 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Progressive padding
+
+$prog-padding-values: (1, 2, 3);
+@each $value in $prog-padding-values {
+  .prog-padding-all-#{$value} {
+    padding: ($value + 0rem);
+
+    @media (min-width: 576px) {
+      padding: ($value + 0.5rem);
+    }
+
+    @media (min-width: 768px) {
+      padding: ($value + 1rem);
+    }
+
+    @media (min-width: 992px) {
+      padding: ($value + 1.5rem);
+    }
+
+    @media (min-width: 1200px) {
+      padding: ($value + 2rem);
+    }
+  }
+}
+
+@each $value in $prog-padding-values {
+  .prog-padding-tb-#{$value} {
+    padding-top: ($value + 0rem);
+    padding-bottom: ($value + 0rem);
+    @media (min-width: 576px) {
+      padding-top: ($value + 0.5rem);
+      padding-bottom: ($value + 0.5rem);
+    }
+
+    @media (min-width: 768px) {
+      padding-top: ($value + 1rem);
+      padding-bottom: ($value + 1rem);
+    }
+
+    @media (min-width: 992px) {
+      padding-top: ($value + 1.5rem);
+      padding-bottom: ($value + 1.5rem);
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: ($value + 2rem);
+      padding-bottom: ($value + 2rem);
+    }
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  @extend .prog-padding-tb-1;
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+
+  div {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    div:first-child{
+      @extend .prog-padding-all-2;
+    }
+    div {
+      div {
+        @media (min-width: 1600px) {
+          columns: 2;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}

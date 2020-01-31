@@ -46,8 +46,6 @@ const Button = styled.a.attrs(props => ({
   }
 `
 
-
-
 const BlockSegmentLeft = styled.div`
   flex-basis: calc(50% - 10vw);
   padding-left: 10vw;
@@ -117,7 +115,7 @@ const List = styled.ul`
 `
 
 const Web = () => (
-  <Section backgroundColor={bgPink}>
+  <Section className={`bg-bgPink`}>
     <BlockSegment>
       <img src={ImgWeb} alt="web" />
     </BlockSegment>
@@ -221,11 +219,11 @@ const CardGroupRow = () => (
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+
+  <h1>{catchPhrase}</h1>
+
    
-     
-        <h1>{catchPhrase}</h1>
-     
-   
+
     <Strategic />
     <Web />
     <CardGroupRow />
@@ -239,7 +237,7 @@ const IndexPage = () => (
       </p>
     </Section>
     <Link to="/articleSingle/">Go to Article</Link>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/web/">Go to Web</Link>
   </Layout>
 )
 
