@@ -10,15 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Header from "./header/Header"
-import "./layout.scss"
-import { ThemeProvider } from "styled-components"
-import { GlobalStyles } from "../global/styles"
-import { GlobalVariables } from "../global/variables"
-import { lightTheme } from "../global/theme"
+import Footer from "./footer/Footer"
+import "../styles/style.scss"
+
 
 const Main = styled.main`
   width: 100%;
-  
 `
 
 const Layout = ({ children }) => {
@@ -34,15 +31,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <ThemeProvider theme={lightTheme}>
-        <GlobalStyles />
-        <GlobalVariables/>
+      
+        
         <Header siteTitle={data.site.siteMetadata.title} />
         <div>
           <Main>{children}</Main>
-          <footer>© {new Date().getFullYear()}</footer>
+          {/* <footer>© {new Date().getFullYear()}</footer> */}
+          <Footer />
         </div>
-      </ThemeProvider>
+     
     </>
   )
 }

@@ -14,5 +14,8 @@ body {
     font-family: "Roboto", sans-serif;
     color: ${({ theme }) => theme.text};
 }
+footer {
+    background-color: ${({theme}) => theme.footer};
+}
 
 `

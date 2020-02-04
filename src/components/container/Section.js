@@ -1,6 +1,4 @@
 import React from "react"
-import styles from "./container.module.scss"
-
 
 class Section extends React.Component {
   constructor(props) {
@@ -8,9 +6,7 @@ class Section extends React.Component {
   }
   render() {
     return (
-      <section
-        className={`container ${styles.container} ${this.props.className}`}
-      >
+      <section className={`container ${this.props.className}`}>
         {this.props.children}
       </section>
     )

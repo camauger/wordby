@@ -1,0 +1,16 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 26px;
+    }
+    h1,
+    main {
+      max-width: 680px;
+      margin: auto;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  

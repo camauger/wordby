@@ -9,7 +9,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ImgDevWeb from "../images/dev-web.png"
 import ImgDevWeb2 from "../images/dev-web-2.png"
-import Button from "../components/button/button"
+import Button from "../components/Button"
 
 const Subheader = styled.h2``
 const Title = styled.h1``

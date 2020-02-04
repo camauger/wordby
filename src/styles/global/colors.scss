@@ -22,13 +22,13 @@ $colors: (
 }
 
 @each $name, $color in $colors {
-  .color-#{$name} {
+  global .color-#{$name} {
     color: $color;
   }
 }
 
 @each $name, $color in $colors {
-  .bg-#{$name} {
+  global .bg-#{$name} {
     background-color: $color;
   }
 }
