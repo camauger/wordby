@@ -36,7 +36,6 @@ $colors: (
 @each $name, $color in $colors {
   .btn-#{$name} {
     background-image: linear-gradient(to right, transparent 50%, $color 50%);
-    
   }
 }
 

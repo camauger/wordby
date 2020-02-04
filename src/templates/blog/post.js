@@ -37,7 +37,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import styles from "./post.module.scss"
+
 
 const BlogPostTemplate = ({ data }) => {
   const postData = data.wordpressPost
@@ -51,7 +51,7 @@ const BlogPostTemplate = ({ data }) => {
     <Layout>
       <SEO title={postData.title} description={postData.excerpt} />
       {featuredImg && <Img fixed={featuredImg} />}
-      <article className={`post ${styles.post}`}>
+      <article className={`post`}>
         <h1 dangerouslySetInnerHTML={{ __html: postData.title }} />
         <main dangerouslySetInnerHTML={{ __html: postData.content }} />
       </article>
