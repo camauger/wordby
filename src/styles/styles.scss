@@ -1,3 +1,11 @@
-@import "./global/*";
-@import "./layout/*";
-@import "./components/*";
+/** Global styles **/
+@import "./global/variables";
+@import "./global/colors";
+@import "./global/utils";
+/** Layout **/
+@import "./layout/header";
+@import "./layout/layout";
+@import "./layout/post";
+/** Components **/
+@import "./components/container";
+@import "./components/button";
