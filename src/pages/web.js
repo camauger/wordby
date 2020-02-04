@@ -9,6 +9,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import ImgDevWeb from "../images/dev-web.png"
 import ImgDevWeb2 from "../images/dev-web-2.png"
+import Button from "../components/button/button"
+
 const Subheader = styled.h2``
 const Title = styled.h1``
 
@@ -27,28 +29,6 @@ const Banner = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-const Left = styled.div`
-  display: flex;
-  flex-basis: 50%;
-  div {
-    padding: 4rem;
-    color: white;
-    font-size: 18px;
-  }
-`
-const Right = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-basis: 50%;
-  flex-direction: column;
-  div {
-    padding: 4rem;
-    color: white;
-    font-size: 18px;
-  }
-`
-
 const WebPage = () => (
   <Layout>
     <SEO title="WebPage" />
@@ -60,8 +40,7 @@ const WebPage = () => (
     <Section className={"bg-turquoise"}>
       <div>
         <img src={ImgDevWeb} alt="Screen" />
-      </div>
-      <div>
+
         <div>
           <h2>Vous avez besoin d’un site web ?</h2>
           <p>
@@ -86,13 +65,14 @@ const WebPage = () => (
             dédiée à la réussite de votre site web.
           </p>
           <h3>Vous avez un projet ?</h3>
-          <a className="btn">Contactez-nous</a>
+          <Button href="/" size={"large"} theme={"btn-primary"}>
+            Contact
+          </Button>
         </div>
       </div>
     </Section>
     <Section className={"bg-sky"}>
       <div>
-        {" "}
         <div>
           <h2>Analyse fonctionnelle et technique</h2>
           <p>
@@ -123,15 +103,12 @@ const WebPage = () => (
             respectant vos diverses contraintes d’affaires et votre budget.
           </p>
         </div>{" "}
-      </div>
-      <div>
         <img src={ImgDevWeb2} alt="Screen" />
       </div>
     </Section>
     <Section className={"bg-salmon"}>
       <div>
         <img src={ImgDevWeb2} alt="Screen" />
-
         <div>
           <h2>Programmation, intégration et&nbsp;sécurité</h2>
 

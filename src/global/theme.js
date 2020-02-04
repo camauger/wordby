@@ -4,8 +4,15 @@ const headLight = "#5b5a5a"
 const bgPink = "#f07e66"
 const bgPinkLight = "#f28d78"
 
+const lightText = "white";
+
 
 export const lightTheme = {
     text: {secondary},
 
+}
+
+export const salmonTheme = {
+    text: {lightText},
+    background: {bgPink}
 }

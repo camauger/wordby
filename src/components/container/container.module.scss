@@ -72,8 +72,8 @@ $containerMargin: 30px;
   padding-right: $containerMargin;
   @extend .prog-padding-tb-2;
   div {
-      margin: auto;
-      max-width: 1440px;
+    margin: auto;
+    max-width: 1440px;
     // Small devices (landscape phones, 576px and up)
     display: flex;
     flex-direction: column;
@@ -101,79 +101,6 @@ $containerMargin: 30px;
     }
   }
 }
-
-// .container {
-//    @extend .prog-padding-tb-1;
-//     padding-left: $containerMargin;
-//     padding-right: $containerMargin;
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   grid-template-rows: auto;
-
-//   div {
-//     //border: 1px solid white;
-//     padding: 1rem;
-//     img {
-
-//     }
-//   }
-//   // Small devices (landscape phones, 576px and up)
-//   @media (min-width: 576px) {
-//   }
-//   // Medium devices (tablets, 768px and up)
-//   @media (min-width: 768px) {
-
-//   }
-//   // Large devices (desktops, 992px and up)
-//   @media (min-width: 992px) {
-//     grid-template-columns: 784px auto;
-//     column-gap: 40px;
-//     div:nth-of-type(2) {
-//         align-self: flex-end;
-//     }
-//   }
-//   // Extra large devices (large desktops, 1200px and up)
-//   @media (min-width: 1200px) {
-//   }
-// }
-
-// .container {
-//     @extend .prog-padding-all-2;
-//   display: flex;
-//   flex-direction: column;
-//   @extend .prog-padding-tb-1;
-//   @media (min-width: 992px) {
-//     display: block;
-//     columns: 2;
-//     break-inside: avoid;
-//     page-break-inside: avoid;
-//     //flex-direction: row;
-//   }
-
-//   div {
-//     flex-basis: 50%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-
-//     img {
-//       max-width: 100%;
-//       //height: auto;
-//     }
-//     div:first-child{
-//      // @extend .prog-padding-all-2;
-//     }
-//     div {
-
-//       div {
-//         @media (min-width: 1600px) {
-//           columns: 2;
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// }
 
 .hero {
   display: flex;

@@ -1,0 +1,47 @@
+/* Colors */
+$colors: (
+  primary: #ee7203,
+  secondary: #091437,
+  headLight: #5b5a5a,
+  bgPink: #f07e66,
+  bgPinkLight: #f28d78,
+  salmon: #f07e66,
+  turquoise: #2eaeb7,
+  sky: #3282d1,
+  kaki: #b5c9b7,
+  cloud: #e4e9f4,
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+@each $name, $color in $colors {
+  .color-#{$name} {
+    color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .btn-#{$name} {
+    background-image: linear-gradient(to right, transparent 50%, $color 50%);
+    
+  }
+}
+
+.bg-turquoise,
+.bg-salmon,
+.bg-sky {
+  color: white;
+}

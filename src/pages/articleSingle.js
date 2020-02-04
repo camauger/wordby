@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 import styled, { css, keyframes } from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "typeface-roboto"
-import "typeface-roboto-slab"
+// import "typeface-roboto"
+// import "typeface-roboto-slab"
 import Article from "../templates/blog/post"
 
 const ArticleSingle = () => (
