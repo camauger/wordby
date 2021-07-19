@@ -27,7 +27,7 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "gatsby-source-wordpress": "^3.1.60",
+    "gatsby-source-wordpress": "^4.0.8",
     "prettier": "^1.19.1"
   },
   "keywords": [
